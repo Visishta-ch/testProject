@@ -1,0 +1,265 @@
+.slide1{
+  background-image: url('./images/bg.jpg');
+}
+@import url('http://fonts.cdnfonts.com');
+@import url('http://fonts.cdnfonts.com/css/goudy-old-style');
+@import url('http://fonts.cdnfonts.com/css/varela-round-2');
+  
+
+/* 
+body{
+  overflow-y: hidden;
+} */
+
+.main-nav {
+  height: 140px;
+  width: 1440px;
+  background-color:#FFFF;
+  border-radius: 0px;
+  margin: 5px auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* overflow: hidden; */
+}
+
+.head{
+  display:flex;
+  /* flex-direction: row; */
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap:15px;
+  justify-content:space-between;
+  align-items: center;
+  font-family: 'Avenir LT 65 Medium';
+  font-weight:bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+ li .img-responsive{
+  width: 350px;
+  height: 77.43px;
+}
+
+.nav-end{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.nav-end .style-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.nav-end .btn{
+  margin:36px;
+  border:none;
+  border-radius: 10px;
+  height:60px;
+  width:166px;
+  background: rgb(184,135,70);
+  text-transform: uppercase;
+  color:white;
+  font-size: 20px;
+  font-family: 'Avenir LT 65 Medium';
+  font-weight: bold;
+  letter-spacing:0.8px;
+  background: linear-gradient(90deg, rgba(184,135,70,1) 0%, rgba(223,189,105,1) 100%);
+}
+
+.style-icon .style1{
+  width:50px;
+  height:5px;
+  background-color:black;
+  border-radius: 2px;
+  margin:6px 0;
+}
+
+.style-icon .style2{
+  width:25px;
+  height:5px;
+  background-color:black;
+  border-radius: 2px;
+ 
+}
+
+.main-container{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items:center;
+  align-content: center;
+}
+
+.left-container{
+  flex:0.6;
+  height:90%;
+  /* background-color:#cfcfcf; */
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+  align-items: center;
+}
+.right-container{
+  flex:0.4;
+  /* background-color:pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+
+}
+.right-container h2{
+  text-transform: uppercase;
+  font-size:50px;
+  text-align: center;
+  font-family: 'Avenir LT 65 Medium';
+  
+  position: relative;
+  animation: mymove 2s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes mymove {
+  from {top: -45px;}
+  to {top: 20px;}
+}
+
+.right-container p{
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 29px;
+  text-align:center;
+  font-family: 'Varela Round';
+  position: relative;
+  animation: mymove2 2s;
+  animation-fill-mode:backwards;
+  
+}
+
+@keyframes mymove2{
+  from {bottom: -45px;}
+  to {bottom: 0px;}
+}
+
+.left-container .img-slide1{
+  width:655.64px;
+  height:550px;
+  text-align: center;
+  padding-left:150px;
+  margin:15px auto;
+  position: relative;
+  animation:  imagemove 5s ease-in-out;
+}
+
+/* .img-slide1:hover{
+  transform: scale(1.09);
+} */
+
+ @keyframes imagemove{
+  0%{transform:scale(0.5,0.5) }
+  50%{transform:scale(1,1)}
+  
+} 
+
+header{
+  font-family: 'Goudy Old Style';
+  font-size:50px;
+  letter-spacing:0.8px;
+  line-height:100%;
+  text-transform:uppercase;
+  text-align: center;
+  padding:2rem;
+}
+
+
+.text{
+  font-family: 'Varela Round ';
+  font-size:24px;
+  padding:25px;
+  margin:15px auto;
+  text-transform:Capitalize;
+  text-align:center;
+  
+  transform: scale(0.4);
+  animation: scale 3s forwards cubic-bezier(0.5, 0.5, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.screen2{
+  
+  background-image: url('./images/bg.jpg');
+  overflow-y:hidden;
+}
+
+.imageGallery{
+  display:flex;
+  gap:10px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  /* background-color: aquamarine; */
+
+}
+
+.imageGallery .left-slideShow{
+  /* flex:0.5; */
+  height:45%;
+  width:40%;
+  margin:25px;
+  /* background-color:#cfcfcf; */
+  justify-content: center;
+  align-content: center;
+  
+
+}
+.imageGallery .right-slideShow{
+  flex:0.5;
+  height:45%;
+  width: 20%;
+
+  margin:25px;
+  /* background-color: antiquewhite; */
+  justify-content: center;
+  align-content: center;
+  
+
+}
+
+.sliderleft{  
+  position: relative;
+  animation: slideleft 3s ease;
+  animation-fill-mode: backwards;
+}
+@keyframes slideleft{
+  from{right: 60px;}
+  to{right: 0px;}
+}
+
+.slideright{
+  position: relative;
+  animation: slideright 3s ease;
+  animation-fill-mode:forwards;
+}
+
+
+@keyframes slideright{
+  from{left: 60px;}
+  to{left: 10px;}
+}
+
